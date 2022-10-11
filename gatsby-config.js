@@ -1,8 +1,8 @@
 module.exports = {
+  pathPrefix: "/sevenfitnessni",
   siteMetadata: {
     title: `sevenfitnessni`,
     siteUrl: `https://www.yourdomain.tld`,
-    pathPrefix: "/sevenfitnessni"
   },
   plugins: ["gatsby-plugin-styled-components", {
     resolve: 'gatsby-plugin-google-analytics',
