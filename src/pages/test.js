@@ -10,7 +10,7 @@ const pageStyles = {
 const headingStyles = {
   marginTop: 0,
   marginBottom: 64,
-  maxWidth: 600,
+  maxWidth: 320,
 }
 const headingAccentStyles = {
   color: "#663399",
@@ -62,54 +62,26 @@ const badgeStyle = {
 const links = [
   {
     text: "Tutorial",
-    url: "/test",
+    url: "/",
     description:
       "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
     color: "#E95800",
   },
   {
     text: "How to Guides",
-    url: "/test",
-    description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
-  },
-  {
-    text: "Tutorial",
-    url: "/test",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
-  },
-  {
-    text: "How to Guides",
-    url: "/test",
-    description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
-  },
-  {
-    text: "Tutorial",
-    url: "/test",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
-  },
-  {
-    text: "How to Guides",
-    url: "/test",
+    url: "/",
     description:
       "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
     color: "#1099A8",
   }
 ]
 
-const IndexPage = () => {
+const TestPage = () => {
   return (
     <Layout>
       <main style={pageStyles}>
         <h1 style={headingStyles}>
-          SevenFitnessNI
+          Test
           <br />
           <span style={headingAccentStyles}>Fun - Involved - Together</span>
         </h1>
@@ -136,6 +108,6 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default TestPage
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>Test Page</title>
