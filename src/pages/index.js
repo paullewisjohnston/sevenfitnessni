@@ -69,35 +69,35 @@ const links = [
   },
   {
     text: "How to Guides",
-    url: "/test",
+    url: "/test1",
     description:
       "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
     color: "#1099A8",
   },
   {
     text: "Tutorial",
-    url: "/test",
+    url: "/test2",
     description:
       "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
     color: "#E95800",
   },
   {
     text: "How to Guides",
-    url: "/test",
+    url: "/test3",
     description:
       "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
     color: "#1099A8",
   },
   {
     text: "Tutorial",
-    url: "/test",
+    url: "/test4",
     description:
       "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
     color: "#E95800",
   },
   {
     text: "How to Guides",
-    url: "/test",
+    url: "/test5",
     description:
       "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
     color: "#1099A8",
@@ -138,4 +138,4 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>Seven Fitness NI - Home</title>

@@ -38,15 +38,15 @@ const links = [
     url: "/",
   },
   {
-    text: "Test",
+    text: "Link1",
     url: "/test",
   },
   {
-    text: "Home",
+    text: "Link2",
     url: "/",
   },
   {
-    text: "Test",
+    text: "Link3",
     url: "/test",
   }
 ]
@@ -60,12 +60,12 @@ const Layout = ({children}) => {
             <Link style={linkStyle} to="/"><StaticImage src="../images/icon.png" alt="logo" width={24} height={24}/></Link>
           </li>
           {links.map(link => (
-            <li key={link.url} style={{ ...listItemStyles, color: link.color}}>
+            <li key={link.text} style={{ ...listItemStyles, color: link.color}}>
               <Link style={linkStyle} to={link.url}>{link.text}</Link>
             </li>
           ))}
           <li key="mobile-menu" style={listItemStyles}>
-            <Link style={linkStyle} to="/">Home</Link>
+            <Link style={linkStyle} to="/">Ham</Link>
           </li>
         </ul>
       </nav>

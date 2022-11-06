@@ -1,8 +1,9 @@
 module.exports = {
   pathPrefix: "/sevenfitnessni",
   siteMetadata: {
-    title: `sevenfitnessni`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: "Seven Fitness NI",
+    siteUrl: "https://www.sevenfitnessni.com",
+    description: "Seven Fitness NI - Our aim is to help people meet their fitness goals and to build a small community feel through group exercise."
   },
   plugins: ["gatsby-plugin-styled-components", {
     resolve: 'gatsby-plugin-google-analytics',
