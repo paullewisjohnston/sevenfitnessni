@@ -1,5 +1,6 @@
 import * as React from "react"
 import Layout from "../components/layout"
+import { Seo } from "../components/seo"
 import { Link } from "gatsby"
 
 const pageStyles = {
@@ -110,4 +111,4 @@ const TestPage = () => {
 
 export default TestPage
 
-export const Head = () => <title>Test Page</title>
+export const Head = () => <Seo title="Seven Fitness NI - Test"/>
