@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Layout } from "../components/layout"
 import { Seo } from "../components/seo"
 import { Link } from "gatsby"
 
@@ -26,22 +27,24 @@ const codeStyles = {
 
 const NotFoundPage = () => {
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
+    <Layout>
+      <main style={pageStyles}>
+        <h1 style={headingStyles}>Page not found</h1>
+        <p style={paragraphStyles}>
+          Sorry 😔, we couldn’t find what you were looking for.
+          <br />
+          {process.env.NODE_ENV === "development" ? (
+            <>
+              <br />
+              Try creating a page in <code style={codeStyles}>src/pages/</code>.
+              <br />
+            </>
+          ) : null}
+          <br />
+          <Link to="/">Go home</Link>.
+        </p>
+      </main>
+    </Layout>
   )
 }
 

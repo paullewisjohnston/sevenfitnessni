@@ -7,7 +7,7 @@ module.exports = {
     twitterUsername: `@sevenfitnessni`,
     image: ``,
   },
-  plugins: ["gatsby-plugin-styled-components", {
+  plugins: ["gatsby-plugin-styled-components",{
     resolve: 'gatsby-plugin-google-analytics',
     options: {
       "trackingId": "335910477"
@@ -24,5 +24,6 @@ module.exports = {
       "path": "./src/images/"
     },
     __key: "images"
-  }]
+  },
+  'gatsby-plugin-breakpoints']
 };

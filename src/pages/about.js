@@ -48,7 +48,7 @@ const blocks = [
   }
 ]
 
-const IndexPage = () => {
+const AboutPage = () => {
   return (
     <Layout>
       <main style={pageStyles}>
@@ -61,6 +61,6 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default AboutPage
 
-export const Head = () => <Seo title="Seven Fitness NI - Home"/>
+export const Head = () => <Seo title="Seven Fitness NI - About"/>
