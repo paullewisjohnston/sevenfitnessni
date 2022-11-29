@@ -10,11 +10,11 @@ const pageStyles = {
 }
 
 const hero = {
-  text: "SevenFitnessNI",
+  text: "faq",
   url: "/",
   description:
     "Our aim is to help people meet their fitness goals and to build a small community feel through group exercise.",
-  color: "#E95800",
+  color: "#fbfbfb",
 }
 
 const blocks = [
@@ -23,28 +23,28 @@ const blocks = [
     url: "/about",
     description:
       "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
+    color: "#fbfbfd",
   },
   {
     text: "Schedule",
     url: "/schedule",
     description:
       "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
+    color: "#fbfbfb",
   },
   {
     text: "FAQ",
     url: "/faq",
     description:
       "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
+    color: "#fbfbfd",
   },
   {
     text: "Contact",
     url: "/contact",
     description:
       "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
+    color: "#fbfbfb",
   }
 ]
 

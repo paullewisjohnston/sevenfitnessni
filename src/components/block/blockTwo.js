@@ -21,12 +21,12 @@ const descriptionStyle = {
 }
 
 
-export const BlockOne = (props) => {
+export const BlockTwo = (props) => {
   const block = props.block
 
   return (
     <div style={{...blockStyle, background:block.color}}>
-      <Link style={linkStyle} to={block.url}>BLOCK 1</Link>
+      <Link style={linkStyle} to={block.url}>BLOCK 2</Link>
       <Link style={linkStyle} to={block.url}>{block.text}</Link>
       <p style={descriptionStyle}>{block.description}</p>
     </div>

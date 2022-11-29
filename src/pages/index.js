@@ -1,6 +1,8 @@
 import * as React from "react"
 import { Layout } from "../components/layout"
+import { Hero } from "../components/block/Hero"
 import { BlockOne } from "../components/block/BlockOne"
+import { BlockTwo } from "../components/block/BlockTwo"
 import { Seo } from "../components/seo"
 
 const pageStyles = {
@@ -14,37 +16,41 @@ const hero = {
   url: "/",
   description:
     "Our aim is to help people meet their fitness goals and to build a small community feel through group exercise.",
-  color: "#E95800",
+  color: "#fbfbfb",
 }
 
 const blocks = [
   {
+    type: "blockone",
     text: "About",
     url: "/about",
     description:
       "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
+    color: "#fbfbfb",
   },
   {
+    type: "blocktwo",
     text: "Schedule",
     url: "/schedule",
     description:
       "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
+    color: "#fbfbfd",
   },
   {
+    type: "blockone",
     text: "FAQ",
     url: "/faq",
     description:
       "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
+    color: "#010127",
   },
   {
+    type: "blocktwo",
     text: "Contact",
     url: "/contact",
     description:
       "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
+    color: "#fbfbfb",
   }
 ]
 
@@ -52,10 +58,12 @@ const IndexPage = () => {
   return (
     <Layout>
       <main style={pageStyles}>
-        <BlockOne block={hero}/>
-          {blocks.map(block => (
-            <BlockOne key={block.url} block={block}/>
-          ))}
+        <Hero block={hero}/>
+        {blocks.map(block => ( 
+          block.type === 'blockone' 
+          ? <BlockOne key={block.url} block={block} background={block.color}/>
+          : <BlockTwo key={block.url} block={block} background={block.color}/>
+        ))}
       </main>
     </Layout>
   )

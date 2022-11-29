@@ -4,10 +4,6 @@ import { NavMobile } from './navMobile'
 
 const links = [
   {
-    text: "Home",
-    url: "/",
-  },
-  {
     text: "About",
     url: "/about",
   },
@@ -18,6 +14,10 @@ const links = [
   {
     text: "FAQ",
     url: "/faq",
+  },
+  {
+    text: "PAR-Q",
+    url: "/parq",
   },
   {
     text: "Contact",

@@ -1,30 +1,25 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
 const navStyles = {
   backgroundColor: "rgb(0,0,0,0.8)",
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
   width:"100%",
-  position:"fixed",
   WebkitBackdropFilter:"blur(10px)",
   backdropFilter:"blur(10px)",
-  top: 0,
-  zIndex: 99
 }
 const listStyles = {
   display: "flex",
-  justifyContent: "space-between",
+  flexWrap: "wrap",
+  justifyContent: "center",
   alignItems: "center",
   maxWidth: "980px",
-  height:"48px",
   listStyle: "none",
-  padding: "0px 22px",
+  padding: "10px 22px",
   margin: "auto"
 }
 const listItemStyles = {
-  justifyContent: "center",
-  padding: "0px 8px",
+  padding: "10px 20px",
   margin: 0,
   listStyle: "none"
 }
@@ -35,15 +30,39 @@ const linkStyle = {
   margin: 0
 }
 
-export const NavDesktop = (props) => {
+const links = [
+  {
+    text: "About",
+    url: "/about",
+  },
+  {
+    text: "Schedule",
+    url: "/schedule",
+  },
+  {
+    text: "FAQ",
+    url: "/faq",
+  },
+  {
+    text: "PAR-Q",
+    url: "/parq",
+  },
+  {
+    text: "Contact",
+    url: "/contact",
+  }
+]
+
+export const Footer = (props) => {
+  const flexDirection = props.isMobile ? 'column' : 'row'
   return (
     <React.Fragment>
       <nav style={navStyles}>
-        <ul style={listStyles}>
-          <li key="home-link-logo" style={listItemStyles}>
-            <Link style={linkStyle} to="/"><StaticImage src="../../images/icon.png" alt="logo" width={24} height={24}/></Link>
+        <ul style={{...listStyles, flexDirection: flexDirection}}>
+          <li key="copyright-statement" style={listItemStyles}>
+            <span style={linkStyle}>Seven Fitness NI © 2022</span>
           </li>
-          {props.links.map(link => (
+          {links.map(link => (
             <li key={link.text} style={{ ...listItemStyles, color: link.color}}>
               <Link style={linkStyle} to={link.url}>{link.text}</Link>
             </li>

@@ -9,7 +9,8 @@ const navStyles = {
   position:"fixed",
   WebkitBackdropFilter:"blur(80px)",
   backdropFilter:"blur(80px)",
-  top: 0
+  top: 0,
+  zIndex: 99
 }
 const menuModalStyles = {
   width:"100%",
