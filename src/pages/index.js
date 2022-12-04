@@ -1,22 +1,26 @@
 import * as React from "react"
 import { Layout } from "../components/layout"
-import { Hero } from "../components/block/Hero"
-import { BlockOne } from "../components/block/BlockOne"
-import { BlockTwo } from "../components/block/BlockTwo"
+import { BlockHero } from "../components/blockHero"
+import { BlockOne } from "../components/blockOne"
+import { BlockTwo } from "../components/blockTwo"
 import { Seo } from "../components/seo"
+import imageDesktop from "../images/teslahero.jpg"
+import imageMobile from "../images/teslahero_mobile.jpg"
 
 const pageStyles = {
-  color: "#232129",
   padding: 0,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
 
 const hero = {
-  text: "SevenFitnessNI",
+  text: "Seven Fitness NI",
   url: "/",
+  imageDesktop: imageDesktop,
+  imageMobile: imageMobile,
   description:
-    "Our aim is to help people meet their fitness goals and to build a small community feel through group exercise.",
+    "Our aim is to help people.",
   color: "#fbfbfb",
+  primaryLink: {text:"Link 1", url:"/"},
+  secondaryLink: {text:"Link 2", url:"/"},
 }
 
 const blocks = [
@@ -58,7 +62,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <main style={pageStyles}>
-        <Hero block={hero}/>
+        <BlockHero block={hero}/>
         {blocks.map(block => ( 
           block.type === 'blockone' 
           ? <BlockOne key={block.url} block={block} background={block.color}/>

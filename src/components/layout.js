@@ -1,5 +1,5 @@
 import React from "react";
-import { Nav } from './nav/nav'
+import { Nav } from './nav'
 import { Footer } from './footer'
 import { useBreakpoint } from 'gatsby-plugin-breakpoints';
 

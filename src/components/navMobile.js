@@ -4,7 +4,6 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const navStyles = {
   backgroundColor: "rgb(0,0,0,0.8)",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
   width:"100%",
   position:"fixed",
   WebkitBackdropFilter:"blur(80px)",
@@ -67,7 +66,7 @@ const listItemStyles = {
 }
 const linkStyle = {
   color: "#f5f5f7",
-  fontSize: 14,
+  fontSize: 15,
   textDecoration: "none",
   margin: 0
 }
@@ -75,7 +74,7 @@ const buttonStyle = {
   all: 'unset',
   color: "#f5f5f7",
   cursor: 'pointer',
-  fontSize: 14,
+  fontSize: 15,
   textDecoration: "none",
   margin: 0
 }
@@ -87,7 +86,7 @@ const Navbar = (props) => {
     <React.Fragment>
       <ul style={navStyle}>
         <li key="home-link-logo" style={listItemStyles}>
-          <Link style={linkStyle} to="/"><StaticImage src="../../images/icon.png" alt="logo" width={24} height={24}/></Link>
+          <Link style={linkStyle} to="/"><StaticImage src="../images/icon.png" alt="logo" width={24} height={24}/></Link>
         </li>
         <li key="mobile-menu" style={listItemStyles}>
           <button style={buttonStyle} onClick={() => props.setOpenMenu(!props.openMenu)}>{menuButtonText}</button>

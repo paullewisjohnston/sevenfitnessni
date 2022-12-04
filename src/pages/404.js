@@ -4,9 +4,7 @@ import { Seo } from "../components/seo"
 import { Link } from "gatsby"
 
 const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
+  padding: "96px"
 }
 const headingStyles = {
   marginTop: 0,

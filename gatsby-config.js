@@ -24,6 +24,5 @@ module.exports = {
       "path": "./src/images/"
     },
     __key: "images"
-  },
-  'gatsby-plugin-breakpoints']
+  },"gatsby-plugin-breakpoints"]
 };

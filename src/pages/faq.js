@@ -1,16 +1,14 @@
 import * as React from "react"
 import { Layout } from "../components/layout"
-import { BlockOne } from "../components/block/BlockOne"
+import { BlockOne } from "../components/blockOne"
 import { Seo } from "../components/seo"
 
 const pageStyles = {
-  color: "#232129",
-  padding: 0,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
+  padding: 0
 }
 
 const hero = {
-  text: "faq",
+  text: "FAQ",
   url: "/",
   description:
     "Our aim is to help people meet their fitness goals and to build a small community feel through group exercise.",

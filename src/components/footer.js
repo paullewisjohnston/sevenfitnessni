@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 
 const navStyles = {
   backgroundColor: "rgb(0,0,0,0.8)",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
   width:"100%",
   WebkitBackdropFilter:"blur(10px)",
   backdropFilter:"blur(10px)",
@@ -15,17 +14,17 @@ const listStyles = {
   alignItems: "center",
   maxWidth: "980px",
   listStyle: "none",
-  padding: "10px 22px",
+  padding: "8px 22px",
   margin: "auto"
 }
 const listItemStyles = {
-  padding: "10px 20px",
+  padding: "8px 20px",
   margin: 0,
   listStyle: "none"
 }
 const linkStyle = {
+  fontSize: 15,
   color: "#f5f5f7",
-  fontSize: 14,
   textDecoration: "none",
   margin: 0
 }
@@ -56,7 +55,7 @@ const links = [
 export const Footer = (props) => {
   const flexDirection = props.isMobile ? 'column' : 'row'
   return (
-    <React.Fragment>
+    <footer>
       <nav style={navStyles}>
         <ul style={{...listStyles, flexDirection: flexDirection}}>
           <li key="copyright-statement" style={listItemStyles}>
@@ -69,6 +68,6 @@ export const Footer = (props) => {
           ))}
         </ul>
       </nav>
-    </React.Fragment>
+    </footer>
   )
 }
