@@ -24,8 +24,10 @@ const contentItems = {
   color: "rgba(0, 0, 0, 0.95)",
   width: "100%",
   height: "100%",
-  maxWidth: "800px",
-  paddingTop: "108px"
+  maxWidth: "400px",
+  paddingTop: "108px",
+  paddingLeft: "20px",
+  paddingRight: "20px",
 }
 
 const linkContainer = {
@@ -47,7 +49,7 @@ export function BlockHero(props) {
         {block.description && <h3>{block.description}</h3>}
         <div style={linkContainer}>
           {block.primaryLink && <Link to={block.primaryLink.url}>{block.primaryLink.text}</Link>}
-          {block.primaryLink && <Link to={block.secondaryLink.url}>{block.secondaryLink.text}</Link>}
+          {block.secondaryLink && <Link to={block.secondaryLink.url}>{block.secondaryLink.text}</Link>}
         </div>
       </div>
     </div>

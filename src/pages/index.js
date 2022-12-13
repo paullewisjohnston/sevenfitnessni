@@ -17,10 +17,9 @@ const hero = {
   imageDesktop: imageDesktop,
   imageMobile: imageMobile,
   description:
-    "Our aim is to help people.",
+    "Our aim is to help people meet their fitness goals and to build a small community feel through group exercise.",
   color: "#fbfbfb",
-  primaryLink: {text:"Link 1", url:"/"},
-  secondaryLink: {text:"Link 2", url:"/"},
+  primaryLink: {text:"Learn more", url:"/about"},
 }
 
 const blocks = [
@@ -29,8 +28,9 @@ const blocks = [
     text: "About",
     url: "/about",
     description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
+      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
     color: "#fbfbfb",
+    primaryLink: {text:"Learn more", url:"/about"}
   },
   {
     type: "blocktwo",
@@ -39,6 +39,16 @@ const blocks = [
     description:
       "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
     color: "#fbfbfd",
+    primaryLink: {text:"Learn more", url:"/schedule"}
+  },
+  {
+    type: "blockone",
+    text: "PAR-Q",
+    url: "/parq",
+    description:
+      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
+    color: "#010127",
+    primaryLink: {text:"Complete Questionnaire", url:"/parq"}
   },
   {
     type: "blockone",
@@ -47,6 +57,7 @@ const blocks = [
     description:
       "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
     color: "#010127",
+    primaryLink: {text:"View FAQ", url:"/schedule"}
   },
   {
     type: "blocktwo",
@@ -55,6 +66,7 @@ const blocks = [
     description:
       "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
     color: "#fbfbfb",
+    primaryLink: {text:"Contact Us", url:"/schedule"}
   }
 ]
 

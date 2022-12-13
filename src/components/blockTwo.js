@@ -5,7 +5,7 @@ import { useBreakpoint } from 'gatsby-plugin-breakpoints';
 const heroComponent = {
   display:"flex",
   position:"relative",
-  height: "720px",
+  height: "600px",
   width: "100%",
   backgroundSize: "cover",
   backgroundPosition: "center",
@@ -46,7 +46,7 @@ export function BlockTwo(props) {
         {block.description && <h3>{block.description}</h3>}
         <div style={linkContainer}>
           {block.primaryLink && <Link to={block.primaryLink.url}>{block.primaryLink.text}</Link>}
-          {block.primaryLink && <Link to={block.secondaryLink.url}>{block.secondaryLink.text}</Link>}
+          {block.secondaryLink && <Link to={block.secondaryLink.url}>{block.secondaryLink.text}</Link>}
         </div>
       </div>
     </div>

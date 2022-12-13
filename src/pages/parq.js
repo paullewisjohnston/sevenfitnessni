@@ -1,10 +1,17 @@
 import * as React from "react"
 import { Layout } from "../components/layout"
-import { BlockOne } from "../components/blockOne"
 import { Seo } from "../components/seo"
 
 const pageStyles = {
   padding: 0
+}
+
+const formStyles = {
+  display: 'flex',
+  margin: 'auto',
+  maxWidth: '640px',
+  width: '100%',
+  paddingTop: '100px'
 }
 
 const hero = {
@@ -22,43 +29,29 @@ const blocks = [
     description:
       "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
     color: "#fbfbfd",
-  },
-  {
-    text: "Schedule",
-    url: "/schedule",
-    description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#fbfbfb",
-  },
-  {
-    text: "FAQ",
-    url: "/faq",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#fbfbfd",
-  },
-  {
-    text: "Contact",
-    url: "/contact",
-    description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#fbfbfb",
   }
 ]
 
-const ContactPage = () => {
+const ParqPage = () => {
   return (
     <Layout>
       <main style={pageStyles}>
-        <BlockOne block={hero}/>
-          {blocks.map(block => (
-            <BlockOne key={block.url} block={block}/>
-          ))}
+        <iframe
+          style={formStyles}
+          title="PAR-Q Form"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSf0NQqwGjcvKK2W_1dzqFF1-tW464SG3hfdpUV1nF5kzt5qnQ/viewform?embedded=true"
+          width="640" 
+          height="1300" 
+          frameBorder="0" 
+          marginHeight="0" 
+          marginWidth="0">
+            Loading…
+        </iframe>
       </main>
     </Layout>
   )
 }
 
-export default ContactPage
+export default ParqPage
 
-export const Head = () => <Seo title="Seven Fitness NI - Contact"/>
+export const Head = () => <Seo title="Seven Fitness NI - PAR-Q"/>
